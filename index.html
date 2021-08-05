@@ -4,49 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>My-Portfolio</title>
 </head>
 <body>
-    
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <img class="logo__img" src="img/logo.png" alt="Logotype">
-                    <div class="logo__text">BOOSTFOLIA</div>
-                </div>
-                <div class="burger">
-                    <span class="burger__item">Menu</span>
-                </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img class="logo__img" src="src/img/logo.png" alt="Logotype">
+                <div class="logo__text">BOOSTFOLIA</div>
             </div>
-        </header>
+            <div class="burger">
+                <span class="burger__item">Menu</span>
+            </div>
+        </div>
+    </header>
 
     <section class="slider">
             <div class="slider__item">
-                <div class="slider__arrow">
-                    <img src="img/arrow-l.png" alt="">
-                </div>
-                <div class="slider__content">
-                    <div class="slider__title">
-                        WE THINK CREATIVE BE CREATIVE
+                <button class="slider__arrow left" type="button">
+                    <img src="src/img/arrow-l.png" alt="">
+                </button>
+                <div class="container">
+                    <div class="slider__content">
+                        <div class="slider__title">
+                            <h1>WE THINK CREATIVE BE CREATIVE</h1>
+                        </div>
+                        <div class="slider__subtitle">
+                            like to do creative works
+                        </div>
+                        <a class="slider__mouse" href="#">
+                            <img class="slider__mouse-img" src="src/img/mouse-icon.png" alt="">
+                            <div class="slider__mouse-content">
+                                Scroll down
+                            </div>
+                        </a>
                     </div>
-                    <div class="slider__subtitle">
-                        like to do creative works
-                    </div>
-                    <div class="slider__mouse">
-                        <img src="" alt="">
-                    </div>
                 </div>
-                <div class="slider__arrow">
-                    <img src="img/arrow-r.png" alt="">
-                </div>
+                <button class="slider__arrow right">
+                    <img src="src/img/arrow-r.png" alt="" type="button">
+                </button>
             </div>
     </section>
 
+    <section class="about">
+        <div class="container">
+            <div class="about__title-holder">
+                <a class="about__title" href="#">
+                    About us
+                </a>
+                <span class="about__redline"></span>
+                <div class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+            </div>
+            <ul class="about__links">
+                <li class="about__item">
+                    <a class="about__link" href="#" target="_blank">
+                        <div class="about__link-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="about__link-title">
+                            
+                        </div>
+                        <div class="about__link-text">
+                            
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
 

@@ -1,17 +1,6 @@
-@font-face {
-    font-family: 'BigNoodleTitling';
-    src: url(../big_noodle_titling/big_noodle_titling.ttf);
-}
-
-@font-face {
-    font-family: 'BigNoodleTitlingOblique';
-    src: url(../big_noodle_titling/big_noodle_titling_oblique.ttf);
-}
-
-
-
+html,
 body {
-    font-family: 'Roboto', 'BigNoodleTitling', 'BigNoodleTitlingOblique', sans-serif;
+    font-family: 'roboto', 'robotoCondensed', 'bigNoodleTitling', 'mgOpenModata', sans-serif;
     font-size: 14px;
 
     margin: 0;
@@ -30,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: #000;
 }
@@ -38,6 +28,11 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .container {

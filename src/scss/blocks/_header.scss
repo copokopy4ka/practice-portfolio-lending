@@ -1,0 +1,135 @@
+.header {
+    padding: 50px 0;
+    transition: background-color .2s linear;
+
+    &.active body {
+        overflow: hidden;
+    }
+
+    &.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 100vh;
+        background-color: rgba(0 0 0 / .7);
+
+        .header__nav {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
+
+    &__holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-img {
+        display: block;
+        margin-right: 25px;
+        max-width: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__logo-text {
+        font-family: $bigNoodleTitling-400;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        color: #696969;
+        text-transform: uppercase;
+    }
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ease-in;
+    }
+
+    &__nav-item {
+        padding: 0 60px;
+    }
+
+    &__nav-link {
+        color: #e84c3d;
+        font-family: $bigNoodleTitling-400;
+        font-size: 23px;
+        text-transform: uppercase;
+        letter-spacing: .4em;
+        background-color: transparent;
+        transition: background-color .3s linear;
+        padding: 30px 0;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+.burger {
+    width: 48px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: all .3s linear;
+
+    &:hover > .burger__item {
+        transform: rotateY(180deg);
+    }
+
+    &__item {
+        display: block;
+        background-color: #464646;
+        border-top: 1px solid #999898;
+        border-bottom: 1px solid #999898;
+        transition: transform .5s linear;
+    }
+
+    &__item,
+    &:before,
+    &:after {
+        content: "";
+        max-width: 38px;
+        width: 100%;
+        height: 3px;
+        background-color: #464646;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+    }
+
+    &:before {
+        top: 5px;
+        height: 2px;
+    }
+    
+    &:after {
+        bottom: 5px;
+        border-top: 1px solid #eceaea;
+        border-bottom:  1px solid #525252;
+    }
+}

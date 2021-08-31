@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/roboto.css">
-    <link rel="stylesheet" href="src/styles/robotoCondensed.css">
-    <link rel="stylesheet" href="src/styles/bigNoodleTitling.css">
-    <link rel="stylesheet" href="src/styles/mgopen_modata.css">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="src/js/main.js"></script>
     <title>My-Portfolio</title>
 </head>
-<body>
-
-    <header class="header">
+<body class="js-header">
+    <header class="header js-header">
         <div class="container">
-            <div class="logo">
-                <img class="logo__img" src="src/img/logo.png" alt="Logotype">
-                <div class="logo__text">BOOSTFOLIA</div>
-            </div>
-            <div class="burger">
-                <span class="burger__item">Menu</span>
+            <div class="header__holder">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="src/img/logo.png" alt="Logotype">
+                    <div class="header__logo-text">BOOSTFOLIA</div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">About us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Portfolio</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Clients</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Team</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="burger js-burger-btn">
+                    <span class="burger__item"></span>
+                </button>
             </div>
         </div>
     </header>
-
     <section class="slider">
             <div class="slider__item">
                 <button class="slider__arrow left" type="button">

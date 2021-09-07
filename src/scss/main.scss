@@ -1,4 +1,5 @@
 @import 'fonts/text-fonts';
+@import 'mixins';
 @import 'vars';
 
 @import 'blocks/header';
@@ -51,9 +52,15 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust:100%;
     font-family: 'roboto-400';
+    overflow-x: hidden;
+}
 
-    &.active {
-        overflow: hidden;
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -76,6 +83,11 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+a {
+    display: block;
+    color: inherit;
+}
+
 a, a:visited {
     text-decoration: none;
 }
@@ -90,14 +102,11 @@ ul {
     list-style: none;
 }
 
-ul li {
-    list-style: none;
-}
-
 img {
     width: 100%;
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,6 +120,7 @@ p {
 
 .container {
     max-width: 1040px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }

@@ -10,123 +10,111 @@
     <script src="src/js/main.js"></script>
     <title>My-Portfolio</title>
 </head>
-<body class="js-header">
+<body>
     <header class="header js-header">
-        <div class="container">
-            <div class="header__holder">
-                <div class="header__logo">
-                    <img class="header__logo-img" src="src/img/logo.png" alt="Logotype">
-                    <div class="header__logo-text">BOOSTFOLIA</div>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">About us</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Portfolio</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Clients</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Team</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header__holder">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img class="header__logo-img" src="src/img/Logo.png" alt="Logotype">
+                    <span class="header__logo-text">BOOSTFOLIA</span>
+                </a>
                 <button class="burger js-burger-btn">
                     <span class="burger__item"></span>
                 </button>
             </div>
         </div>
-    </header>
-    <section class="slider">
-            <div class="slider__item">
-                <button class="slider__arrow left" type="button">
-                    <img src="src/img/arrows/arrow-l.png" alt="">
-                </button>
-                <div class="container">
-                    <div class="slider__content">
-                        <div class="slider__title">
-                            <h1>WE THINK CREATIVE BE CREATIVE</h1>
-                        </div>
-                        <div class="slider__subtitle">
-                            like to do creative works
-                        </div>
-                        <a class="slider__mouse" href="#">
-                            <img class="slider__mouse-img" src="src/img/mouse/mouse-icon.png" alt="">
-                            <div class="slider__mouse-content">
-                                Scroll down
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <button class="slider__arrow right">
-                    <img src="src/img/arrows/arrow-r.png" alt="" type="button">
-                </button>
-            </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <div class="about__title-holder">
-                <a class="about__title" href="#">
-                    About us
-                </a>
-                <span class="about__redline"></span>
-                <div class="about__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-            </div>
-            <ul class="about__sections">
-                <li class="about__item">
-                    <a class="about__link" href="#" target="_blank">
-                        <div class="about__link-img">
-                            <img src="src/img/about-icons/design.png" alt="">
-                        </div>
-                        <div class="about__link-title">
-                            CREATIVE DESIGN
-                        </div>
-                        <div class="about__link-text">
-                            Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana
-                        </div>
-                    </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link js-link-btn"><span>About us</span></a>
                 </li>
-                <li class="about__item">
-                    <a class="about__link" href="#" target="_blank">
-                        <div class="about__link-img">
-                            <img src="src/img/about-icons/portfolio.png" alt="">
-                        </div>
-                        <div class="about__link-title">
-                            UNIQU PORTFOLIO
-                        </div>
-                        <div class="about__link-text">
-                            Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana
-                        </div>
-                    </a>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link js-link-btn"><span>Portfolio</span></a>
                 </li>
-                <li class="about__item">
-                    <a class="about__link" href="#" target="_blank">
-                        <div class="about__link-img">
-                            <img src="src/img/about-icons/updates.png" alt="">
-                        </div>
-                        <div class="about__link-title">
-                            INFINITE UPDATES
-                        </div>
-                        <div class="about__link-text">
-                            Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana
-                        </div>
-                    </a>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link js-link-btn"><span>Clients</span></a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link js-link-btn"><span>Our Team</span></a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link js-link-btn"><span>Contacts</span></a>
                 </li>
             </ul>
-        </div>
-    </section>
-
-
-
-
+        </nav>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <div class="slider__item">
+                <button class="slider__arrow slider__arrow_left">
+                    <img src="src/img/arrows/arrow-l.png" alt="">
+                </button>
+                <button class="slider__arrow slider__arrow_right">
+                    <img src="src/img/arrows/arrow-r.png" alt="">
+                </button>
+                <div class="container">
+                    <div class="slider__title-holder">
+                        <h1 class="slider__title">WE THINK CREATIVE BE CREATIVE</h1>
+                        <div class="slider__subtitle">
+                            <span>like to do creative works</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__mouse" href="#">
+                    <div class="slider__mouse-img">
+                        <img src="src/img/mouse/mouse-icon.png" alt="">
+                    </div>
+                    <span>Scroll down</span>
+                </a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__title-holder">
+                    <h2 class="about__title">
+                        About us
+                    </h2>
+                    <div class="about__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <ul class="about__cards">
+                    <li class="about__item">
+                        <a class="about__link" href="#" target="_blank">
+                            <div class="about__link-img">
+                                <img src="src/img/about-icons/design.png" alt="">
+                            </div>
+                            <h3 class="about__link-title">CREATIVE</h3>
+                            <div class="about__link-text">
+                                <p>Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="about__item">
+                        <a class="about__link" href="#" target="_blank">
+                            <div class="about__link-img">
+                                <img src="src/img/about-icons/portfolio.png" alt="">
+                            </div>
+                            <h3 class="about__link-title">UNIQU PORTFOLIO</h3>
+                            <div class="about__link-text">
+                                <p>Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="about__item">
+                        <a class="about__link" href="#" target="_blank">
+                            <div class="about__link-img">
+                                <img src="src/img/about-icons/updates.png" alt="">
+                            </div>
+                            <h3 class="about__link-title">INFINITE</h3>
+                            <div class="about__link-text">
+                                <p>Lorem ipsum dolor sit amet, conse&shy;cte&shy;tur adi&shy;pisi&shy;cing elit, sed dominicana</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

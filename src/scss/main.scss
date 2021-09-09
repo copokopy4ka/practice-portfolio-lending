@@ -125,3 +125,21 @@ p {
     padding: 0 20px;
 }
 
+.btn {
+    outline: none;
+    border-bottom: 2px solid #b11000;
+    padding: 10px;
+    background-color: #e84c3d;
+    color: #ebebeb;
+    width: 100%;
+    max-width: 125px;
+    font-family: $roboto-700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color .1s ease-in-out;
+
+    &:hover {
+        background-color: #cf3b2d;
+    }
+}
+

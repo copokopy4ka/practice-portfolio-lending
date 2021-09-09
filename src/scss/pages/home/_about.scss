@@ -1,13 +1,37 @@
 .about {
     padding: 90px 0 120px;
 
+    @include breakpoint($laptop-bp) {
+        padding: 90px 0;
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding: 70px 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 50px 0;
+    }
+
     &__title-holder {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
         text-align: center;
-        margin: 0 0 55px;
+        margin: 0 0 60px;
+
+        @include breakpoint($laptop-bp) {
+            margin: 0 0 45px;
+        }
+    
+        @include breakpoint($tablet-bp) {
+            margin: 0 0 35px;
+        }
+    
+        @include breakpoint($mobile-bp) {
+            margin: 0 0 25px;
+        }
     }
 
     &__title {
@@ -18,6 +42,10 @@
         padding: 0 0 10px;
         margin: 0 0 25px;
         position: relative;
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 40px;
+        }
 
         &:after {
             content: '';
@@ -36,18 +64,45 @@
     &__text {
         max-width: 550px;
         font-family: $roboto-100;
-        margin-bottom: 60px;
         color: #696969;
+        font-size: 14px;
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 12px;
+        }
     }
 
     &__cards {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 120px;
+
+        @include breakpoint($laptop-bp) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     
     &__item {
         max-width: 320px;
+        width: calc(100% / 3);
+        padding: 0 20px 20px 0;
+
+        &:last-child {
+            padding: 0 0 20px;
+        }
+
+        @include breakpoint($laptop-bp) {
+            width: 100%;
+            padding: 0 0 20px;
+
+            &:nth-child(3n + 2) {
+                align-self: center;
+            }
+
+            &:nth-child(3n + 3) {
+                align-self: flex-end;
+            }
+        }
     }
     
     &__link {
@@ -64,25 +119,43 @@
             border: 1px solid #f15324;
             outline: none;
         }
+
+        @include breakpoint($mobile-bp) {
+            padding: 30px;
+        }
     }
     
     &__link-img {
-        max-width: 20px;
-        margin-bottom: 25px;
+        margin: 0 auto 25px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        @include breakpoint($mobile-bp) {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 15px;
+        }
     }
     
     &__link-title {
         font-size: 18px;
-        font-weight: 700;
+        font-family: $roboto-700;
         letter-spacing: .025em;
         text-transform: uppercase;
         color: #707070;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 15px;
+        }
     }
     
     &__link-text {
         font-size: 14px;
-        font-weight: 100;
+        font-family: $roboto-100;
         letter-spacing: .025em;
         color: #707070;
 
@@ -91,6 +164,10 @@
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+        }
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 12px;
         }
     }
 }

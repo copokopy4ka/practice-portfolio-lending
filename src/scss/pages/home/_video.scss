@@ -1,0 +1,25 @@
+.video {
+    background-color: #171f23;
+
+    &__row {
+        display: flex;
+    }
+
+    &__col {
+        max-width: 50%;
+        width: 100%;
+        min-height: 430px;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        color: #e7e7e7;
+
+    }
+}

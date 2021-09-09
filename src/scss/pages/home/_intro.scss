@@ -1,6 +1,6 @@
 .slider {
     background-color: #353535;
-    color: #fff;
+    color: #d6d5d5;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -27,6 +27,15 @@
         top: 50%;
         transform: translateY(-50%);
 
+        @include breakpoint($laptop-bp) {
+            top: 75%;
+        }
+
+        @include breakpoint($tablet-bp) {
+            width: 40px;
+            height: 55px;
+        }
+
         img {
             transition: all .2s linear;
         }
@@ -37,10 +46,18 @@
 
         &_left {
             left: 55px;
+
+            @include breakpoint($laptop-bp) {
+                left: 5%;
+            }
         }
 
         &_right {
             right: 55px;
+
+            @include breakpoint($laptop-bp) {
+                right: 5%;
+            }
         }
     }
 
@@ -53,7 +70,28 @@
         font-family: $bigNoodleTitling-400;
         color: #d6d5d5;
         letter-spacing: .15em;
-        margin-bottom: 15px;
+        margin: 0 0 15px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 62px;
+            letter-spacing: .12em;
+        }
+
+        @include breakpoint($laptop-bp) {
+            font-size: 56px;
+            letter-spacing: .1em;
+        }
+
+        @include breakpoint($tablet-bp) {
+            font-size: 48px;
+            letter-spacing: .08em;
+            margin: 0 0 10px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 38px;
+            letter-spacing: .06em;
+        }
     }
 
     &__subtitle {
@@ -61,6 +99,26 @@
         font-family: $bigNoodleTitling-400;
         color: #d6d5d5;
         letter-spacing: .1em;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+            letter-spacing: .09em;
+        }
+
+        @include breakpoint($laptop-bp) {
+            font-size: 28px;
+            letter-spacing: .08em;
+        }
+
+        @include breakpoint($tablet-bp) {
+            font-size: 24px;
+            letter-spacing: .07em;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 20px;
+            letter-spacing: .06em;
+        }
     }
 
     &__mouse {
@@ -77,8 +135,13 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @include breakpoint($tablet-bp) {
+        @include breakpoint($laptop-bp) {
             bottom: 30px;
+            width: 80px;
+            height: 60px;
+        }
+
+        @include breakpoint($tablet-bp) {
             width: 70px;
             height: 50px;
         }
@@ -94,6 +157,18 @@
             color: #fff;
             font-size: 12px;
             transition: color .2s linear;
+
+            @include breakpoint($laptop-bp) {
+                font-size: 11px;
+            }
+
+            @include breakpoint($tablet-bp) {
+                font-size: 10px;
+            }
+    
+            @include breakpoint($mobile-bp) {
+                font-size: 8px;
+            }
         }
 
         &:hover span{
@@ -103,13 +178,16 @@
 
     &__mouse-img {
         max-width: 18px;
+        margin: 0 0 20px;
 
         @include breakpoint($tablet-bp) {
             max-width: 16px;
+            margin: 0 0 15px;
         }
 
         @include breakpoint($mobile-bp) {
             max-width: 14px;
+            margin: 0 0 10px;
         }
     }
 }
